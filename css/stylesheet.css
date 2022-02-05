@@ -1,0 +1,55 @@
+@media only screen and (max-width: 599px) {
+}
+body {
+  background-color: whitesmoke;
+}
+nav ul li {
+  display: inline;
+  padding-right: 10px;
+}
+nav ul {
+  padding-left: 0px;
+  text-align: right;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+  text-align: center;
+  justify-items: center;
+}
+#main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.h1 {
+  font-size: 70px;
+}
+.bagpack {
+  color: rgb(192, 192, 192);
+}
+#p {
+  background-color: red;
+}
+.h3 {
+  background-color: lightskyblue;
+  border: lightskyblue solid;
+}
+.h3:hover {
+  background-color: blue;
+  color: aliceblue;
+}
+.box {
+  background-color: rgb(192, 192, 192);
+  padding: 5%;
+  color: white;
+  text-align: left;
+}
+#basket {
+  background-color: black;
+  text-align: center;
+  padding: 2%;
+}
+footer {
+  background-color: black;
+}
