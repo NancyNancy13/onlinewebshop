@@ -1,5 +1,23 @@
-@media only screen and (max-width: 599px) {
+/* mobile view */
+@media only screen and (max-width: 600px) {
+  #main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .discount h2:last-child {
+    position: relative;
+    left: 2rem;
+    bottom: 5rem;
+  }
 }
+/* for tablet */
+@media only screen and (max-width: 899px) {
+  .discount h2:last-child {
+    position: relative;
+    left: 2rem;
+  }
+}
+/* for desktop */
 body {
   background-color: whitesmoke;
 }
@@ -13,24 +31,20 @@ nav ul {
 }
 main {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 1em;
-  text-align: center;
-  justify-items: center;
+  text-align: left;
 }
 #main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.h1 {
-  font-size: 70px;
+  text-align: center;
 }
 .bagpack {
   color: rgb(192, 192, 192);
 }
-#p {
-  background-color: red;
+.h1 {
+  font-size: 70px;
 }
+
 .h3 {
   background-color: lightskyblue;
   border: lightskyblue solid;
@@ -40,16 +54,63 @@ main {
   color: aliceblue;
 }
 .box {
-  background-color: rgb(192, 192, 192);
+  background-color: white;
   padding: 5%;
-  color: white;
+  color: black;
   text-align: left;
 }
 #basket {
   background-color: black;
+  color: white;
   text-align: center;
   padding: 2%;
 }
-footer {
+#basket:hover {
+  opacity: 0.5;
+}
+
+.soldout img {
+  opacity: 0.5;
+}
+.discount h2:last-child {
+  background-color: red;
+  color: white;
+  width: 12vw;
+  position: relative;
+  left: 25rem;
+  bottom: 5rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.soldout::before {
+  content: "Sold Out";
+  position: absolute;
   background-color: black;
+  color: white;
+  padding: 1rem;
+}
+.box {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+#box {
+  text-align: center;
+}
+productlist div .dicount,
+productlist div .price span {
+  display: none;
+}
+productlist div.onsale.discount {
+  display: flex;
+  justify-content: space-between;
+}
+.onsale .price span {
+  display: initial;
 }
